@@ -14,7 +14,7 @@ sudo apt-get install -y ansible
 
 # Install New Relic
 sudo sh -c "echo 'deb http://apt.newrelic.com/debian/ newrelic non-free' > /etc/apt/sources.list.d/newrelic.list"
-sudo wget -O- https://download.newrelic.com/548C16BF.gpg | sudo apt-key add -
+sudo wget -O- https://download.newrelic.com/3897480.gpg | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install -y newrelic-sysmond
 
@@ -24,3 +24,4 @@ sudo service newrelic-sysmond start
 
 # Start Nginx
 sudo systemctl start nginx
+
