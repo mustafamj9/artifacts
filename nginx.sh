@@ -12,7 +12,3 @@ sudo systemctl start nginx
 
 # Install git
 sudo apt-get install git
-
-# Set permissions for nginx
-sudo chown -R www-data:www-data /var/www/html/
-sudo chmod -R 755 /var/www/html/
