@@ -1,20 +1,18 @@
 #!/bin/bash
 
-# Update the package repository
+# Update the system
 sudo apt-get update
+sudo apt-get upgrade
 
-# Install Nginx
-sudo apt-get install -y nginx
+# Install nginx
+sudo apt-get install nginx
 
-# Install Ansible
-# sudo apt-get install -y software-properties-common
-# sudo apt-add-repository -y ppa:ansible/ansible
-# sudo apt-get update
-# sudo apt-get install -y ansible
-
-# Start Nginx
+# Start nginx service
 sudo systemctl start nginx
 
-# Install Git
-sudo apt-get install git -y
+# Install git
+sudo apt-get install git
 
+# Set permissions for nginx
+sudo chown -R www-data:www-data /var/www/html/
+sudo chmod -R 755 /var/www/html/
