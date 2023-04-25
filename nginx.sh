@@ -12,6 +12,3 @@ sudo systemctl start nginx
 
 # Install git
 sudo apt-get install git
-
-# Restart the VM
-sudo reboot
